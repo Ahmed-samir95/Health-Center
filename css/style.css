@@ -1,0 +1,171 @@
+/* global*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+small , span , a{
+    display: block;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --main-color: #85b0be;
+    --second-color: #95bbc7;
+    --third-color: #052C3F;
+    --forth-color: #4d8090;
+    --wh-color: #fff;
+    --bg-color: #EFF5F7;
+    --main-transition: .5s;
+}
+
+ .btn{
+    display: block;
+    color: var(--wh-color);
+    font-size: 2rem;
+    background-color: transparent;
+    width: 17rem;
+    height: 4.5rem;
+    border: 0.2rem solid var(--main-color);
+    line-height: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: background-color .5s;
+    margin: auto;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--main-color);
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section-heading .section-heading-title{
+    margin-bottom: 1.5rem;
+    color: var(--third-color);
+    font-size: 4rem;
+}
+.section-heading .section-heading-desc{
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+/*media for section-heading*/
+@media (max-width: 767px){
+    .section-heading .section-heading-desc{
+        line-height: 1.8;
+    }
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mg-t{
+    margin-top: 7rem;
+}
+/* media for contianer*/
+/*small*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/*medium*/
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/*larg*/
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* btn to up */
+.btn-up{
+    background-color: var(--forth-color);
+    color: var(--wh-color);
+    border: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: none;
+    
+}
