@@ -78,10 +78,6 @@ img{
     color: var(--third-color);
     font-size: 4rem;
 }
-.section-heading .section-heading-desc{
-    color: var(--main-color);
-    font-size: 1.8rem;
-}
 
 /*media for section-heading*/
 @media (max-width: 767px){
@@ -306,12 +302,37 @@ header{
         font-size: 1.4rem;
     }
 }
+/* -------------------------------------------------------------------------- */
+/* doctors */
+.doctors-content{
+    text-align: center;
+}
+@media(min-width: 768px){
+    .doctors-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 3rem;
+    }
+}
+.doctors-content .doctors-item{
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
 
+.doctors-content .doctors-title{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
 
+.doctors-content .doctors-item:hover .doctors-title{
+    transition: var(--main-transition);
+    color: var(--main-color);
+}
 
-
-
-
+.doctors-content .doctors-desc{
+    color: var(--paragraph-color);
+    font-size: 1.4rem;
+}
 
 
 /* ------------------------------------------------------------------------------------ */
