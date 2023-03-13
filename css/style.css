@@ -261,16 +261,51 @@ header{
     padding: 1.5rem 0;
     color: var(--bg-color);
 }
+/* ------------------------------------------------------------------------------------ */
+.about{
+    background-image: url(../img/about-bg.jpg);
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    position: relative;
+}
+
+.about-content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+
+}
+@media (max-width: 767px){
+    .about-content{
+        left: 50%;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+.about-content .about-title{
+    font-size: 4rem;
+}
+@media (max-width: 767px) {
+    .about-content .about-title{
+        font-size: 2rem;
+    }
+}
 
 
-
-
-
-
-
-
-
-
+.about-content .about-desc{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: var(--paragraph-color);
+}
+@media (max-width: 767px) {
+    .about-content .about-desc{
+        font-size: 1.4rem;
+    }
+}
 
 
 
