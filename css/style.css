@@ -379,6 +379,63 @@ header{
     padding: 1rem 0;
     font-size: 1.6rem;
 }
+/* ---------------------------------------------------------------------------------- */
+/* appointment */
+.appointment{
+    padding: 2rem;
+    background-color: var(--bg-color);
+}
+
+@media(min-width: 768px){
+    .appo-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+        grid-gap: 3rem;
+    }
+}
+
+.appo-content .appo-item{
+    margin-bottom: 1.5rem;
+}
+
+.appo-content .appo-item:nth-child(2){
+    text-align: center;
+}
+
+.appo-content .appo-item .appo-title{
+    color: var(--heading-color);
+    font-size: 3rem;
+}
+@media(max-width: 768px){
+    .appo-content .appo-item .appo-title{
+        font-size: 2rem;
+    }
+}
+
+.appo-content .appo-item .form{
+    margin-top: 1rem;
+}
+
+
+.appo-content .appo-item .form .control{
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.appo-content .appo-item .form input,
+.appo-content .appo-item .form textarea{
+    width: 100%;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
