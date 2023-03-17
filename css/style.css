@@ -427,10 +427,26 @@ header{
     width: 100%;
     padding: 1rem;
 }
+/* -------------------------------------------------------------------------- */
+footer{
+    background-color: var(--main-color);
+    padding: 2rem;
+}
 
-
-
-
+.footer-content{
+    text-align: center;
+    color: var(--bg-color);
+}
+.footer-content a{
+    display: inline-block;
+    color: var(--bg-color);
+    text-transform: capitalize;
+    
+}
+.footer-content a:hover{
+    transition: var(--main-transition);
+    transform: scale(1.1);
+}
 
 
 
